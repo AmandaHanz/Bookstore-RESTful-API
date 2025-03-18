@@ -1,10 +1,13 @@
 package com.bookstore.model;
 
+import java.util.List;
+
 public class Customer {
     private int id;
     private String name;
     private String email;
     private String password;
+    private List<CartItem> cart;
 
     public Customer() {}
 
@@ -47,5 +50,9 @@ public class Customer {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public List<CartItem> getCart() { return cart; }
+
+    public void setCart(List<CartItem> cart) { this.cart = cart; }
 
 }
