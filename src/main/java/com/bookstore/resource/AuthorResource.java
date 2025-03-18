@@ -1,7 +1,7 @@
 package com.bookstore.resource;
 
 import com.bookstore.data.Database;
-import com.bookstore.util.exception.AuthorNotFoundException;
+import com.bookstore.exception.exception.AuthorNotFoundException;
 import com.bookstore.model.Author;
 import com.bookstore.model.Book;
 import javax.ws.rs.*;

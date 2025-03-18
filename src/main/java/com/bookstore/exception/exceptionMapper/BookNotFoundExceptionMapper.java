@@ -1,20 +1,19 @@
-package com.bookstore.util.exceptionMapper;
+package com.bookstore.exception.exceptionMapper;
 
-import com.bookstore.util.exception.AuthorNotFoundException;
-
-import javax.ws.rs.core.MediaType;
+import com.bookstore.exception.exception.BookNotFoundException;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
+import javax.ws.rs.core.MediaType;
 import java.util.HashMap;
 import java.util.Map;
 
 @Provider
-public class AuthorNotFoundExceptionMapper implements ExceptionMapper<AuthorNotFoundException> {
+public class BookNotFoundExceptionMapper implements ExceptionMapper<BookNotFoundException> {
     @Override
-    public Response toResponse(AuthorNotFoundException exception) {
+    public Response toResponse(BookNotFoundException exception) {
         Map<String, String> error = new HashMap<>();
-        error.put("error", "Author Not Found");
+        error.put("error", "Book Not Found");
         error.put("message", exception.getMessage());
 
         return Response.status(Response.Status.NOT_FOUND)

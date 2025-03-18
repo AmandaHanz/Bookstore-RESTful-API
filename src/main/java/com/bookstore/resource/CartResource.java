@@ -1,7 +1,7 @@
 package com.bookstore.resource;
 
 import com.bookstore.data.Database;
-import com.bookstore.util.exception.CartNotFoundException;
+import com.bookstore.exception.exception.CartNotFoundException;
 import com.bookstore.model.CartItem;
 import com.bookstore.model.Customer;
 import javax.ws.rs.*;

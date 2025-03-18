@@ -1,4 +1,4 @@
-package com.bookstore.util.exception;
+package com.bookstore.exception.exception;
 
 public class InvalidInputException extends RuntimeException {
     public InvalidInputException(String message) {

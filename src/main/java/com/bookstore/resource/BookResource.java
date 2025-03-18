@@ -1,7 +1,7 @@
 package com.bookstore.resource;
 
 import com.bookstore.data.Database;
-import com.bookstore.util.exception.BookNotFoundException;
+import com.bookstore.exception.exception.BookNotFoundException;
 import com.bookstore.model.Book;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

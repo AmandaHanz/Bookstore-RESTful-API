@@ -44,8 +44,32 @@
             <version>3.0.2</version>
         </dependency>
 
+        <!-- Tomcat Embedded -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>10.1.13</version>
+        </dependency>
+
+        <!-- Tomcat Embedded Servlet -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>10.1.13</version>
+        </dependency>
+
+        <!-- Java Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
 
     </dependencies>
+
+
 
 
 </project>

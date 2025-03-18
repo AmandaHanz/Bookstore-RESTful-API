@@ -1,6 +1,6 @@
-package com.bookstore.util.exceptionMapper;
+package com.bookstore.exception.exceptionMapper;
 
-import com.bookstore.util.exception.CartNotFoundException;
+import com.bookstore.exception.exception.AuthorNotFoundException;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -10,11 +10,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Provider
-public class CartNotFoundExceptionMapper implements ExceptionMapper<CartNotFoundException> {
+public class AuthorNotFoundExceptionMapper implements ExceptionMapper<AuthorNotFoundException> {
     @Override
-    public Response toResponse(CartNotFoundException exception) {
+    public Response toResponse(AuthorNotFoundException exception) {
         Map<String, String> error = new HashMap<>();
-        error.put("error", "Cart Not Found");
+        error.put("error", "Author Not Found");
         error.put("message", exception.getMessage());
 
         return Response.status(Response.Status.NOT_FOUND)

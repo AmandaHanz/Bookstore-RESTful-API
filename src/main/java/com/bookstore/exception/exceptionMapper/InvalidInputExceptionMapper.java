@@ -1,6 +1,6 @@
-package com.bookstore.util.exceptionMapper;
+package com.bookstore.exception.exceptionMapper;
 
-import com.bookstore.util.exception.InvalidInputException;
+import com.bookstore.exception.exception.InvalidInputException;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
